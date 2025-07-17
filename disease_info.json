@@ -18,10 +18,8 @@
     "cause": "Abnormal growth in the brain",
     "diet": "Fruits, fish, turmeric, avoid red meat",
     "precaution": "Regular checkups, early imaging"
-  }
-}
-{
-  "Diabetes": {
+  },
+"Diabetes": {
     "cause": "Body does not produce or respond properly to insulin.",
     "diet": "Eat whole grains, vegetables, lean protein. Avoid sugary drinks.",
     "recommendation": "Regular blood sugar checks. Exercise. Take prescribed medications."
