@@ -1,0 +1,6 @@
+{
+  "TB": ["AIIMS Delhi", "Apollo Hospitals", "NIMHANS"],
+  "Diabetes": ["Dr. Mohan’s Diabetes Clinic", "Fortis", "Medanta"],
+  "HIV/AIDS": ["NACO Centers", "YRG Care Chennai", "Max Healthcare"],
+  "Brain Tumor": ["Tata Memorial", "AIIMS Neuro", "Manipal Hospital"]
+}
