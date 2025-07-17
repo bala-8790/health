@@ -9,14 +9,27 @@ from email.mime.multipart import MIMEMultipart
 with open("disease_info.json", "r") as f:
     disease_info = json.load(f)
 
-
-# Symptom list - extended
+# Define the symptoms
 symptoms = [
     "fever", "cough", "fatigue", "headache", "joint pain", "rash", "vomiting", "diarrhea",
     "weight loss", "night sweats", "sore throat", "chills", "skin lesions", "blurred vision",
     "abdominal pain", "shortness of breath", "blood in stool", "nausea", "hair loss", "swollen lymph nodes"
 ]
 
+# Dummy function to simulate prediction (replace this with real model logic)
+def predict_disease(input_df):
+    # You can implement your ML logic here
+    # For example: rule-based, threshold-based, or a manually coded model
+    # Example: If fever, cough, and fatigue, then flu
+    symptoms_present = input_df.iloc[0].to_dict()
+    if symptoms_present["fever"] and symptoms_present["cough"] and symptoms_present["fatigue"]:
+        return "Flu"
+    elif symptoms_present["rash"] and symptoms_present["joint pain"]:
+        return "Dengue"
+    else:
+        return "Unknown"
+
+# Streamlit UI
 st.set_page_config(page_title="AI Disease Prediction", layout="wide")
 st.title("🩺 AI-Powered Disease Prediction App")
 
@@ -33,11 +46,11 @@ if st.button("Predict Disease"):
     if len(selected_symptoms) < 3:
         st.warning("Please select at least 3 symptoms.")
     else:
-        # Encode symptoms
+        # Encode symptoms as binary
         input_data = [1 if sym in selected_symptoms else 0 for sym in symptoms]
         input_df = pd.DataFrame([input_data], columns=symptoms)
 
-        # Predict
+        # Predict using dummy function
         prediction = predict_disease(input_df)
         st.success(f"✅ Predicted Disease: **{prediction}**")
 
@@ -49,7 +62,7 @@ if st.button("Predict Disease"):
         else:
             st.warning("ℹ️ Additional info not available for this disease.")
 
-        # Simulated hospital recommendations
+        # Hospitals
         st.markdown("### 🏥 Recommended Hospitals")
         hospitals = [
             {"name": "Apollo Hospitals", "city": "Hyderabad", "contact": "040-23232323"},
@@ -59,11 +72,11 @@ if st.button("Predict Disease"):
         for h in hospitals:
             st.markdown(f"- **{h['name']}**, {h['city']} - 📞 {h['contact']}")
 
-        # Email result
+        # Email sending
         if email:
             try:
-                sender = "jonnabalamahendravarma@gmail.com"
-                sender_pass = "Ammanana@8790"  # Use an App Password for Gmail
+                sender = "your_email@example.com"
+                sender_pass = "your_app_password"
 
                 message = MIMEMultipart()
                 message["From"] = sender
@@ -90,4 +103,4 @@ Health AI System
 
                 st.success(f"📩 Report sent to {email}")
             except Exception as e:
-                st.error("❌ Failed to send email. Please check credentials or app password settings.")
+                st.error(f"❌ Failed to send email: {e}")
