@@ -1,0 +1,22 @@
+{
+  "TB": {
+    "cause": "Bacterial infection affecting lungs",
+    "diet": "High-protein foods, green vegetables, avoid smoking",
+    "precaution": "Wear mask, complete medication, avoid public contact"
+  },
+  "Diabetes": {
+    "cause": "High blood sugar levels due to insulin resistance",
+    "diet": "Avoid sugar, eat fiber-rich and whole grains",
+    "precaution": "Exercise daily, regular sugar tests"
+  },
+  "HIV/AIDS": {
+    "cause": "Virus attacking immune system",
+    "diet": "High-protein diet, hydration, avoid raw food",
+    "precaution": "Safe sex, no shared needles, regular checkups"
+  },
+  "Brain Tumor": {
+    "cause": "Abnormal growth in the brain",
+    "diet": "Fruits, fish, turmeric, avoid red meat",
+    "precaution": "Regular checkups, early imaging"
+  }
+}
