@@ -38,8 +38,8 @@ if st.button("Predict Disease"):
         input_df = pd.DataFrame([input_data], columns=symptoms)
 
         # Predict
-        prediction = predict_disease(input_df)[0]
-        st.success(f"✅ Predicted Disease: **{prediction}**")
+        #prediction = predict_disease(input_df)[0]
+        #st.success(f"✅ Predicted Disease: **{prediction}**")
 
         # Show additional info
         if prediction in disease_info:
@@ -62,8 +62,8 @@ if st.button("Predict Disease"):
         # Email result
         if email:
             try:
-                sender = "your_email@example.com"
-                sender_pass = "your_password"  # Use an App Password for Gmail
+                sender = "jonnabalamahendravarma@gmail.com"
+                sender_pass = "Ammanana@8790"  # Use an App Password for Gmail
 
                 message = MIMEMultipart()
                 message["From"] = sender
