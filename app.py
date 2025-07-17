@@ -31,18 +31,17 @@ if st.button("🔍 Predict Disease"):
         st.success(f"Top 3 possible diseases for you:")
         for dis in diseases:
             if dis in disease_info:
-    st.markdown(f"**Cause:** {disease_info[dis]['cause']}")
-    st.markdown(f"**Diet Plan:** {disease_info[dis]['diet']}")
-    st.markdown(f"**Recommendations:** {disease_info[dis]['recommendation']}")
-else:
-    st.warning("Details for this disease are not available yet.")
-
-            st.markdown(f"**Cause:** {disease_info[dis]['cause']}")
-            st.markdown(f"**Diet Plan:** {disease_info[dis]['diet']}")
-            st.markdown(f"**Precautions:** {disease_info[dis]['precaution']}")
-            st.markdown(f"**Recommended Hospitals:**")
-            for h in hospital_info[dis]:
-                st.markdown(f"- {h}")
+                st.markdown(f"**Cause:** {disease_info[dis]['cause']}")
+                st.markdown(f"**Diet Plan:** {disease_info[dis]['diet']}")
+                st.markdown(f"**Recommendations:** {disease_info[dis]['recommendation']}")
+            else:
+                st.warning("Details for this disease are not available yet.")
+                st.markdown(f"**Cause:** {disease_info[dis]['cause']}")
+                st.markdown(f"**Diet Plan:** {disease_info[dis]['diet']}")
+                st.markdown(f"**Precautions:** {disease_info[dis]['precaution']}")
+                st.markdown(f"**Recommended Hospitals:**")
+                for h in hospital_info[dis]:
+                    st.markdown(f"- {h}")
 
         full_report = f"""
         Name: {name}
