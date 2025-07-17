@@ -20,3 +20,55 @@
     "precaution": "Regular checkups, early imaging"
   }
 }
+{
+  "Diabetes": {
+    "cause": "Body does not produce or respond properly to insulin.",
+    "diet": "Eat whole grains, vegetables, lean protein. Avoid sugary drinks.",
+    "recommendation": "Regular blood sugar checks. Exercise. Take prescribed medications."
+  },
+  "Thyroid": {
+    "cause": "Hormonal imbalance from thyroid gland (hypo or hyper).",
+    "diet": "Consume iodine-rich foods, avoid goitrogens.",
+    "recommendation": "Regular TSH tests, medications as advised by a doctor."
+  },
+  "Tuberculosis": {
+    "cause": "Infection caused by *Mycobacterium tuberculosis*, affects lungs.",
+    "diet": "High-protein diet, lots of fluids, fruits, and vegetables.",
+    "recommendation": "Follow full anti-TB medication course, avoid crowd exposure."
+  },
+  "HIV": {
+    "cause": "Caused by human immunodeficiency virus, weakens immune system.",
+    "diet": "Eat protein-rich food, fruits, vegetables; avoid raw meat and dairy.",
+    "recommendation": "ART therapy, avoid infections, regular CD4 tests."
+  },
+  "Brain Tumor": {
+    "cause": "Abnormal cell growth in the brain due to genetic or environmental causes.",
+    "diet": "Nutrient-dense diet with antioxidants, omega-3 fats, and fiber.",
+    "recommendation": "Consult neurologist, MRI, potential surgery/chemo."
+  },
+  "Malaria": {
+    "cause": "Caused by *Plasmodium* parasite via mosquito bite.",
+    "diet": "Eat iron-rich and energy-rich food, stay hydrated.",
+    "recommendation": "Take antimalarial drugs, rest, prevent mosquito bites."
+  },
+  "Dengue": {
+    "cause": "Caused by dengue virus spread by *Aedes* mosquitoes.",
+    "diet": "Papaya leaf juice, hydration, fruits, and light diet.",
+    "recommendation": "Bed rest, monitor platelets, avoid NSAIDs."
+  },
+  "Chickenpox": {
+    "cause": "Viral infection by varicella-zoster virus.",
+    "diet": "Soft foods, cold items like smoothies, avoid spicy food.",
+    "recommendation": "Antiviral medication, avoid scratching blisters."
+  },
+  "Cancer": {
+    "cause": "Uncontrolled growth of abnormal cells in the body.",
+    "diet": "Plant-based, anti-inflammatory foods, avoid processed meats.",
+    "recommendation": "Follow oncologist advice: chemo, radiation, surgery."
+  },
+  "Typhoid": {
+    "cause": "Bacterial infection from *Salmonella typhi* in contaminated food/water.",
+    "diet": "Liquid diet, boiled food, ORS for hydration.",
+    "recommendation": "Take antibiotics, complete full medication course."
+  }
+}
