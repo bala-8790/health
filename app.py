@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import joblib
 import json
 import smtplib
 from email.mime.text import MIMEText
@@ -10,8 +9,6 @@ from email.mime.multipart import MIMEMultipart
 with open("disease_info.json", "r") as f:
     disease_info = json.load(f)
 
-# Load model
-model = joblib.load("model.pkl")  # Replace with your trained model path
 
 # Symptom list - extended
 symptoms = [
