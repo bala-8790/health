@@ -2,8 +2,8 @@ import smtplib
 from email.message import EmailMessage
 
 def send_email(receiver_email, subject, content):
-    sender_email = "your_email@example.com"
-    password = "your_password"
+    sender_email = "jonnabalamahendravarma@gmail.com"
+    password = "Ammanana@8790"
 
     msg = EmailMessage()
     msg.set_content(content)
