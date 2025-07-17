@@ -38,8 +38,8 @@ if st.button("Predict Disease"):
         input_df = pd.DataFrame([input_data], columns=symptoms)
 
         # Predict
-        #prediction = predict_disease(input_df)[0]
-        #st.success(f"✅ Predicted Disease: **{prediction}**")
+        prediction = predict_disease(input_df)[0]
+        st.success(f"✅ Predicted Disease: **{prediction}**")
 
         # Show additional info
         if prediction in disease_info:
